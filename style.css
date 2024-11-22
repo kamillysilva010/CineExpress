@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html,body{
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:100vw;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+
+}
+.logo{
+    font-size: 1.5em;
+}
+header a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 0.8em;
+
+}
+.cad-home{
+    width:110px;
+    height: 28px;
+    border-radius:5px;
+    background-color: #E51C1F;
+    color:aliceblue;
+    font-weight: bold;
+    font-size:0.8em;
+}
+.carrosel{
+    width: 100%;   
+    height: 100%;
+    overflow: hidden; 
+}
+
+.slides-container{
+    display: flex;
+    transition: 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slide{
+    position: relative;
+    min-width: 100%;
+}
+
+.slide img{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    height: 18%;
+    width: 50%;
+    top: 40%;  
+    left: 2%;
+    transform: translateX(0);
+    z-index: 10;
+}
+.logo-anime{
+    width: 400px;
+    }
+
+.container-button-home{
+    position: absolute; /* Mantém a posição absoluta */
+    top: 58%; /* Ajusta a posição vertical */
+    left: 2%; /* Ajusta a posição horizontal */
+    width: 15%; /* Ajusta a largura */
+    height: 8%;
+    z-index: 11; 
+}
+
+.assistir-home{
+    width:120px;
+    height: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius:5px;
+    background-color: #E51C1F;
+    color:antiquewhite;
+    font-weight: bold;
+}
+.social-media{
+    position: absolute; 
+    top: 63%;
+    left:2%;
+    z-index: 12; 
+    background-color: #f0f0f0; 
+    height: 50px;
+    width:200px;
+}
+
+
