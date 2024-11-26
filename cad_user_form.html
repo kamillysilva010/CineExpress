@@ -1,6 +1,3 @@
-<?php
-require 'conexao.php'
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +17,7 @@ require 'conexao.php'
                 <div class="lado-dir">
                     <h2>Cadastrar-se</h2>
                     <div class="formulario">
-                        <form>
+                        <form action="cad_user.php" method="POST">
                             <label for="nome">Nome:</label>
                             <input id="nome" type="text"/>
 
@@ -30,7 +27,7 @@ require 'conexao.php'
                             <label for="senha">Senha:</label>
                             <input id="senha" type="password"/>
 
-                            <button id="btn-form">Cadastrar</button>
+                            <button type="submit" id="btn-form">Cadastrar</button>
                         </form>
                     </div> <!--Formulario / aonde o formulario em si está-->
                 </div> 
